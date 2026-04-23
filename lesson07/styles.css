@@ -322,7 +322,6 @@ main {
     display: flex;
   }
   .cards {
-    grid-template-columns: 2;
     grid-gap: 1rem;
   }
   .card {
