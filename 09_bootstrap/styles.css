@@ -1,0 +1,89 @@
+:root {
+  --title-color: rgba(2, 162, 255, 0.733);
+  --body-forground-color: rgba(255, 255, 255, 0.865);
+  --body-background-color: #1d1d1d;
+  --card-background-color: #303030;
+  --card-accent-color: rgba(158, 157, 159, 0.582);
+}
+
+:is(h1, h2, h3, .card-title-txt-atr, .gallery-title-txt-atr) {
+  color: var(--title-color);
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+h1 {
+  font-size: clamp(2.25rem, 6vw, 5rem);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--body-background-color);
+}
+:is(p, .card-list-x) {
+  color: var(--body-forground-color);
+  font-size: clamp(1.4rem, 3vw, 1.75rem);
+  font-weight: 400;
+}
+
+.card-body-x {
+  background-color: var(--card-background-color);
+  margin: 20px 0;
+  padding: 40px 20px 30px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px var(--card-accent-color);
+}
+
+/* Galery Grid Layout */
+.gallery {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 2em 0;
+}
+/* Gallery Image Container */
+.gallery-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  background: #fff;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+/* Images */
+.gallery-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+/* figcaption */
+.gallery-image figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 0.5em;
+  font-size: 0.9rem;
+  text-align: center;
+  opacity: 0;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+  transform: translateY(20%);
+}
+/* hover effect fig caption*/
+.gallery-image:hover figcaption {
+  opacity: 1;
+  transform: translateY(0);
+  transform: scale(1.5);
+  transition: transform 0.8s ease;
+}
+/* hover effect pic enlarge*/
+.gallery-image:hover {
+  transform: scale(1.025);
+}
