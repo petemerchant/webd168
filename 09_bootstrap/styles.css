@@ -25,6 +25,10 @@ body {
   font-weight: 400;
 }
 
+.card-list-x {
+  list-style-type: none;
+}
+
 .card-body-x {
   background-color: var(--card-background-color);
   margin: 20px 0;
