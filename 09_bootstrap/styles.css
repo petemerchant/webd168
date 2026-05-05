@@ -33,13 +33,6 @@ body {
   box-shadow: 10px 10px 20px var(--card-accent-color);
 }
 
-/* Galery Grid Layout */
-.gallery {
-  display: grid;
-  gap: 1em;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 2em 0;
-}
 /* Gallery Image Container */
 .gallery-image {
   position: relative;
