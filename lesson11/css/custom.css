@@ -1,0 +1,10 @@
+caption {
+  caption-side: top;
+  text-align: right;
+}
+@media (max-width: 768px) {
+  section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
