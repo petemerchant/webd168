@@ -1,0 +1,34 @@
+caption {
+  caption-side: top;
+  text-align: right;
+}
+@media (max-width: 768px) {
+  section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+.profilepic {
+  width: 50%;
+  height: 50%;
+  border: 0.5rem solid rgba(6, 6, 196, 0.2);
+}
+.fade-img {
+  opacity: 0.5;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+  transform-origin: center;
+  will-change: opacity, transform;
+  backface-visibility: hidden;
+}
+.fade-img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none;
+  }
+}
