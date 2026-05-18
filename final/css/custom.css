@@ -29,9 +29,15 @@
   transform: scale(1.05);
 }
 
-.resume-image-nav-profilepic:hover {
+.resume-image-nav-profilepic:hover,
+.social-icon:hover {
   opacity: 1;
   transform: scale(1.05);
+}
+
+.social-icon:hover {
+  opacity: 1;
+  transform: scale(1.5);
 }
 
 .skills-list-font {
