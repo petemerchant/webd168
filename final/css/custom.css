@@ -81,7 +81,7 @@ p {
 /*  --card-border-hover-color: #747171;; */
 /* border: 1px solid var(--card-border-hover-color); */
 .background-img {
-  background-image: url("//petemerchant.github.io/webd168/final/media/images/phoenix.png");
+  background-image: url("/final/media/images/phoenix.png");
 
   /* Center the background image */
   background-position: center;
@@ -173,7 +173,19 @@ section.resume-section {
   padding-bottom: 5rem;
   max-width: 105rem;
 }
-section.resume-section .resume-section-content {
+
+section.resume-section-top {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1.25rem;
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+  max-width: 105rem;
+}
+
+section.resume-section,
+.resume-section-content {
   width: 100%;
 }
 
@@ -183,5 +195,19 @@ section.resume-section .resume-section-content {
     padding-right: 5rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+
+  section.resume-section-top {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+  }
+
+  section.resume-section-bottom {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 0;
   }
 }
