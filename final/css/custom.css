@@ -11,6 +11,7 @@
   width: 100%;
   height: 100%;
   border: 0.5rem solid rgb(249, 3, 3);
+  padding: 1rem;
 }
 
 .resume-image:hover {
@@ -80,7 +81,7 @@ p {
 /*  --card-border-hover-color: #747171;; */
 /* border: 1px solid var(--card-border-hover-color); */
 .background-img {
-  background-image: url("//petemerchant.github.io/webd168/final/media/images/phoenix.jpg");
+  background-image: url("//petemerchant.github.io/webd168/final/media/images/phoenix.png");
 
   /* Center the background image */
   background-position: center;
@@ -97,7 +98,7 @@ p {
   /* Ensure the body covers the full viewport height */
   min-height: 100vh;
 
-  background-size: 65% auto;
+  background-size: contain;
   border-radius: 12px;
 }
 
@@ -161,4 +162,26 @@ p {
 
 .example-picxx {
   box-shadow: 0.25rem 0.25rem 1rem var(--card-border-hover-shadow-color);
+}
+
+section.resume-section {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1.25rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  max-width: 105rem;
+}
+section.resume-section .resume-section-content {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  section.resume-section {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
 }
