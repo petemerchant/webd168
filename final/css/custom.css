@@ -100,9 +100,6 @@ p {
   /* Prevent the image from repeating */
   background-repeat: no-repeat;
 
-  /* Scale the image to fill the screen */
-  background-size: cover;
-
   /* Fix the image so it doesn't scroll */
   background-attachment: fixed;
 
