@@ -27,12 +27,17 @@
     <link href="css/custom.css" rel="stylesheet" />
   </head>
   <body id="page-top">
-    <audio id="bg-music" loop>
-      <source
-        src="//petemerchant.github.io/webd168/final/media/music/Dave_Brubeck_1959_Time_Out_03_Take_Five.mp3"
-        type="audio/mpeg" />
-      Your browser does not support the audio element.
-    </audio>
+    <div class="visually-hidden text-white">
+      Background music: "Take Five" by Dave Brubeck (1959 jazz instrumental
+      track, no lyrics).
+      <audio id="bg-music" loop>
+        <source
+          src="//petemerchant.github.io/webd168/final/media/music/Dave_Brubeck_1959_Time_Out_03_Take_Five.mp3"
+          type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
     <!-- Navigation-->
     <nav
       class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
@@ -72,9 +77,11 @@
               >Education</a
             >
           </li>
+
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
           </li>
+
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#interests"
               >Interests</a
@@ -108,7 +115,7 @@
             <br />
             <button
               id="music-btn"
-              class="btn btn-outline-secondary bg-dark end-0 m-3">
+              class="btn btn-outline-secondary bg-dark text-white end-0 m-3">
               🎵 Play Music
             </button>
           </li>
@@ -121,7 +128,7 @@
       <section class="resume-section-top" id="about">
         <div class="resume-section-content card">
           <img
-            class="resume-image-profile-about img-fluid img-profile rounded-circle mx-auto d-block mb-2"
+            class="resume-image-profile-about img-fluid img-profile rounded-circle mx-auto d-block mb-5 mt-5"
             src="media/images/34215_1482028460894_1539321589_1202335_6909236_n(1).jpg"
             alt="Pete Merchant Profile Pic" />
 
@@ -203,29 +210,65 @@
           </p>
 
           <div class="social-icons">
-            <a class="social-icon" href="#!"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a class="social-icon" href="#!"><i class="fab fa-github"></i></a>
-            <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
-            <a class="social-icon" href="#!"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a class="social-icon" href="#!"
-              ><i class="fa-brands fa-discord"></i
-            ></a>
-            <a class="social-icon" href="#!"
-              ><i class="fa-brands fa-snapchat"></i
-            ></a>
-            <a class="social-icon" href="#!"
-              ><i class="fa-solid fa-cheese"></i
-            ></a>
-            <a class="social-icon" href="#!"
-              ><i class="fa-solid fa-crow"></i
-            ></a>
-            <a class="social-icon" href="#!"
-              ><i class="fa-solid fa-democrat"></i
-            ></a>
+            <a
+              class="social-icon"
+              href="https://www.linkedin.com"
+              target="_blank">
+              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+              <span class="visually-hidden">Visit our LinkedIn page</span></a
+            >
+
+            <a class="social-icon" href="https://github.com/" target="_blank"
+              ><i class="fab fa-github" aria-hidden="true"></i>
+              <span class="visually-hidden">Visit our Github page</span></a
+            >
+
+            <a class="social-icon" href="https://x.com/" target="_blank"
+              ><i class="fab fa-twitter" aria-hidden="true"></i>
+              <span class="visually-hidden">Visit our Twitter page</span></a
+            >
+
+            <a
+              class="social-icon"
+              href="https://www.facebook.com/"
+              target="_blank"
+              ><i class="fab fa-facebook-f" aria-hidden="true"></i>
+              <span class="visually-hidden">Visit our Facebook page</span></a
+            >
+
+            <a class="social-icon" href="https://discord.com/" target="_blank"
+              ><i class="fa-brands fa-discord" aria-hidden="true"></i>
+              <span class="visually-hidden">Visit our Discord page</span></a
+            >
+
+            <a
+              class="social-icon"
+              href="https://www.snapchat.com/"
+              target="_blank"
+              ><i class="fa-brands fa-snapchat" aria-hidden="true"></i>
+              <span class="visually-hidden">Visit our Snapchat page</span></a
+            >
+
+            <a
+              class="social-icon"
+              href="https://www.tillamook.com/visit-us/creamery"
+              target="_blank"
+              ><i class="fa-solid fa-cheese" aria-hidden="true"></i>
+              <span class="visually-hidden">Visit our Cheese page</span></a
+            >
+
+            <a
+              class="social-icon"
+              href="https://www.massaudubon.org/nature-wildlife/birds/crows"
+              target="_blank"
+              ><i class="fa-solid fa-crow" aria-hidden="true"></i>
+              <span class="visually-hidden">Visit our Crow page</span></a
+            >
+
+            <a class="social-icon" href="https://democrats.org/" target="_blank"
+              ><i class="fa-solid fa-democrat" aria-hidden="true"></i>
+              <span class="visually-hidden">Visit our DNC page</span></a
+            >
           </div>
         </div>
       </section>
@@ -436,7 +479,7 @@
             </div>
 
             <div class="col-12 col-md-5 col-lg-3">
-              <p class="subheading mb-3">Software</p>
+              <div class="subheading mb-3">Software</div>
 
               <ul class="list-inline dev-icons">
                 <li class="skills-list-font">
@@ -462,7 +505,7 @@
             </div>
 
             <div class="col-12 col-md-5 col-lg-3">
-              <p class="subheading mb-3">Hardware</p>
+              <div class="subheading mb-3">Hardware</div>
 
               <ul class="list-inline dev-icons">
                 <li class="skills-list-font">
@@ -488,7 +531,7 @@
 
           <div class="col-12 col-lg-7">
             <div class="row g-2">
-              <p class="subheading mb-3">Certifications & Licenses</p>
+              <div class="subheading mb-3">Certifications & Licenses</div>
               <div class="col-12 col-lg-5">
                 <ul class="list-inline dev-icons mb-0">
                   <li class="skills-list-font">
@@ -593,7 +636,7 @@
       <section class="resume-section" id="resume">
         <div class="resume-section-content card">
           <h2 class="mb-5">Resume</h2>
-          <p class="lead mb-5">Click to Download:</p>
+          <p class="lead">Click to Download:</p>
           <figure>
             <a
               href="media/docs/Pete_Merchant_Resumedummy.pdf"
@@ -601,7 +644,7 @@
               <img
                 class="resume-image"
                 src="media/docs/Pete_Merchant_Resumedummy.jpg"
-                alt="Resume Download Button" />
+                alt="Download Pete Merchant's Resume PDF" />
             </a>
           </figure>
         </div>
@@ -1089,8 +1132,8 @@
               <figure class="gallery-image">
                 <img
                   src="media/images/FB_IMG_1567890571919.jpg"
-                  alt="Alaskian Airplane Recovery" />
-                <figcaption>Alaskian Airplane Recovery</figcaption>
+                  alt="Doppleganger" />
+                <figcaption>Doppleganger</figcaption>
               </figure>
             </div>
 
@@ -1098,8 +1141,8 @@
               <figure class="gallery-image">
                 <img
                   src="media/images/FB_IMG_1567890542768.jpg"
-                  alt="Alaskian Airplane Recovery" />
-                <figcaption>Alaskian Airplane Recovery</figcaption>
+                  alt="Gambler" />
+                <figcaption>Gambler</figcaption>
               </figure>
             </div>
           </div>
@@ -1112,11 +1155,18 @@
         <div class="resume-section-content card">
           <h2 class="mb-5">Contact</h2>
           <p class="lead">
-            Have questions, comments, or suggestions about the music featured on
-            my site? Use the contact form below to get in touch. Whether you
-            want to share your favorite albums, talk about legendary bands, or
-            simply connect with fellow music fans, we would love to hear from
-            you.
+            Whether you need enterprise level infrastructure support,
+            cybersecurity expertise, or someone capable of solving problems that
+            "should not technically be possible," you have come to the right
+            place. I specialize in secure systems, network defense, cloud
+            infrastructure, and keeping critical operations running smoothly
+            under pressure. Over the years, I have worked with businesses,
+            remote operations, mysterious organizations, and clients who
+            preferred a certain level of discretion. No matter the challenge, I
+            believe every system leaves clues, every problem has a solution, and
+            some conversations are better left off the record. Reach out through
+            the contact form below, details are appreciated, questions are
+            optional.
           </p>
           <form name="subform" method="post" action="submit.html">
             <div class="row g-3 mb-3">
@@ -1157,18 +1207,24 @@
             </div>
 
             <div class="mb-3">
-              <label for="color" class="form-label"
-                >What is your Favorite Color?</label
+              <label for="shoeSize" class="form-label"
+                >What is your Shoe Size?</label
               >
-              <select
-                class="form-select bg-dark text-white"
-                id="color"
-                aria-label="Default select example">
-                <option selected>Select One</option>
-                <option value="1">Red</option>
-                <option value="2">Blue</option>
-                <option value="3">Green</option>
-                <option value="4">Black</option>
+              <select class="form-select bg-dark text-white" id="shoeSize">
+                <option selected disabled>Select One</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
               </select>
             </div>
 
@@ -1212,76 +1268,234 @@
               </div>
             </fieldset>
 
-            <label for="color" class="form-label"
-              >Check Things that relate:</label
-            >
-            <div class="form-check">
-              <input
-                class="form-check-input bg-dark"
-                type="checkbox"
-                value=""
-                id="checkAirplaneGladiator" />
-              <label class="form-check-label" for="checkAirplaneGladiator">
-                I like Gladiator Movies
-              </label>
-            </div>
+            <p>Check all that apply:</p>
+            <div class="row g-4">
+              <div class="col-12 col-md-4">
+                <div class="form-check">
+                  <input
+                    class="form-check-input bg-dark"
+                    type="checkbox"
+                    value=""
+                    id="checkAirplaneGladiator" />
+                  <label class="form-check-label" for="checkAirplaneGladiator">
+                    I like Gladiator Movies
+                  </label>
+                </div>
 
-            <div class="form-check">
-              <input
-                class="form-check-input bg-dark"
-                type="checkbox"
-                value=""
-                id="checkAirplaneTurkPrision"
-                checked />
-              <label class="form-check-label" for="checkAirplaneTurkPrision">
-                I have been in a Turkish Prision
-              </label>
-            </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input bg-dark"
+                    type="checkbox"
+                    value=""
+                    id="checkAirplaneTurkPrision"
+                    checked />
+                  <label
+                    class="form-check-label"
+                    for="checkAirplaneTurkPrision">
+                    I have been in a Turkish Prision
+                  </label>
+                </div>
 
-            <div class="form-check">
-              <input
-                class="form-check-input bg-dark"
-                type="checkbox"
-                value=""
-                id="checkAirplaneGymnasium"
-                checked />
-              <label class="form-check-label" for="checkAirplaneGymnasium">
-                I like to hang around Gymnasiums
-              </label>
-            </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input bg-dark"
+                    type="checkbox"
+                    value=""
+                    id="checkAirplaneGymnasium"
+                    checked />
+                  <label class="form-check-label" for="checkAirplaneGymnasium">
+                    I like to hang around Gymnasiums
+                  </label>
+                </div>
 
-            <div class="form-check">
-              <input
-                class="form-check-input bg-dark"
-                type="checkbox"
-                value=""
-                id="checkBigLebowskiCalmer"
-                checked />
-              <label class="form-check-label" for="checkBigLebowskiCalmer">
-                I am Calmer than you
-              </label>
-            </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input bg-dark"
+                    type="checkbox"
+                    value=""
+                    id="checkBigLebowskiCalmer"
+                    checked />
+                  <label class="form-check-label" for="checkBigLebowskiCalmer">
+                    I am Calmer than you
+                  </label>
+                </div>
 
-            <div class="form-check">
-              <input
-                class="form-check-input bg-dark"
-                type="checkbox"
-                value=""
-                id="checkBigLebowskiAbides" />
-              <label class="form-check-label" for="checkBigLebowskiAbides">
-                The Dude abides
-              </label>
-            </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input bg-dark"
+                    type="checkbox"
+                    value=""
+                    id="checkBigLebowskiAbides" />
+                  <label class="form-check-label" for="checkBigLebowskiAbides">
+                    The Dude abides
+                  </label>
+                </div>
 
-            <div class="form-check">
-              <input
-                class="form-check-input bg-dark"
-                type="checkbox"
-                value=""
-                id="checkBigLebowskiAggression" />
-              <label class="form-check-label" for="checkBigLebowskiAggression">
-                This aggression will not stand, man
-              </label>
+                <div class="form-check">
+                  <input
+                    class="form-check-input bg-dark"
+                    type="checkbox"
+                    value=""
+                    id="checkBigLebowskiAggression" />
+                  <label
+                    class="form-check-label"
+                    for="checkBigLebowskiAggression">
+                    This aggression will not stand, man
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input bg-dark"
+                    type="checkbox"
+                    value=""
+                    id="checkBacktotheFutureRoads" />
+                  <label
+                    class="form-check-label"
+                    for="checkBacktotheFutureRoads">
+                    Where we’re going, we don’t need roads
+                  </label>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="form-check">
+                  <input
+                    class="form-check-input bg-dark"
+                    type="checkbox"
+                    value=""
+                    id="checkStarwarsOdds" />
+                  <label class="form-check-label" for="checkStarwarsOdds">
+                    Never tell me the odds!
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input bg-dark"
+                    type="checkbox"
+                    value=""
+                    id="checkPrincessBrideCastle" />
+                  <label
+                    class="form-check-label"
+                    for="checkPrincessBrideCastle">
+                    Have fun storming the castle!
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input bg-dark"
+                    type="checkbox"
+                    value=""
+                    id="checkBigFightClub1Rule" />
+                  <label class="form-check-label" for="checkBigFightClub1Rule">
+                    You do not talk about Fight Club
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input bg-dark"
+                    type="checkbox"
+                    value=""
+                    id="checkBigLebowskiRug" />
+                  <label class="form-check-label" for="checkBigLebowskiRug">
+                    That rug really tied the room together
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input bg-dark"
+                    type="checkbox"
+                    value=""
+                    id="checkWhenHarryMetSallyOrdering" />
+                  <label
+                    class="form-check-label"
+                    for="checkWhenHarryMetSallyOrdering">
+                    I’ll have what she’s having
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input bg-dark"
+                    type="checkbox"
+                    value=""
+                    id="checkMontyPythonWound" />
+                  <label class="form-check-label" for="checkMontyPythonWound">
+                    It’s just a flesh wound
+                  </label>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="form-check">
+                  <input
+                    class="form-check-input bg-dark"
+                    type="checkbox"
+                    value=""
+                    id="checkScarfaceFriend" />
+                  <label class="form-check-label" for="checkScarfaceFriend">
+                    Say hello to my little friend!
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input bg-dark"
+                    type="checkbox"
+                    value=""
+                    id="checkKarateKidWax" />
+                  <label class="form-check-label" for="checkKarateKidWax">
+                    Wax on, wax off
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input bg-dark"
+                    type="checkbox"
+                    value=""
+                    id="checkTopGunSpeed" />
+                  <label class="form-check-label" for="checkTopGunSpeed">
+                    I feel the need, the need for speed
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input bg-dark"
+                    type="checkbox"
+                    value=""
+                    id="checkJawsBoat" />
+                  <label class="form-check-label" for="checkJawsBoat">
+                    You’re gonna need a bigger boat
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input bg-dark"
+                    type="checkbox"
+                    value=""
+                    id="checkBigDirtyDancingBaby" />
+                  <label
+                    class="form-check-label"
+                    for="checkBigDirtyDancingBaby">
+                    Nobody puts Baby in a corner
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input bg-dark"
+                    type="checkbox"
+                    value=""
+                    id="checkAirplaneShirley" />
+                  <label class="form-check-label" for="checkAirplaneShirley">
+                    Don’t call me Shirley
+                  </label>
+                </div>
+              </div>
             </div>
             <br />
             <button type="submit" class="btn btn-primary">Submit</button>
