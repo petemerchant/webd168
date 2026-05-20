@@ -6,10 +6,10 @@
   --card-border-hover-color: #747171;
   --card-border-hover-shadow-color: rgba(0, 0, 0, 0.8);
   --example-img-border-shadow-color: rgba(0, 0, 0, 0.8);
-}
 
-.nav-link:not(.active) {
-  color: rgb(0, 0, 0) !important;
+  --bs-nav-link-color: #160a05;
+  --bs-nav-link-hover-color: #160a05;
+  --bs-nav-link-disabled-color: #6c757d;
 }
 
 .resume-image {
