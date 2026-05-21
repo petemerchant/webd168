@@ -1151,7 +1151,14 @@
             the contact form below, details are appreciated, questions are
             optional.
           </p>
-          <form name="subform" method="post" action="submit.html">
+
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input
+              type="hidden"
+              name="access_key"
+              value="d3d74fa9-c078-448e-853c-2a13d068d646" />
+
+            <!-- <form name="subform" method="post" action="submit.html"> -->
             <div class="row g-3 mb-3">
               <div class="col-sm-6">
                 <label for="fname" class="form-label">First Name:</label>
@@ -1160,6 +1167,7 @@
                   class="form-control bg-dark text-white"
                   placeholder="First name"
                   id="fname"
+                  name="first_name"
                   required />
               </div>
               <div class="col-sm-6">
@@ -1169,6 +1177,7 @@
                   class="form-control bg-dark text-white"
                   placeholder="Last name"
                   id="lname"
+                  name="last_name"
                   required />
               </div>
             </div>
@@ -1178,6 +1187,7 @@
                 type="email"
                 class="form-control bg-dark text-white"
                 id="email"
+                name="email"
                 placeholder="name@example.com" />
             </div>
             <div class="mb-3">
@@ -1185,6 +1195,7 @@
               <textarea
                 class="form-control bg-dark text-white"
                 id="message"
+                name="message"
                 rows="5"
                 maxlength="250"></textarea>
             </div>
@@ -1193,7 +1204,10 @@
               <label for="shoeSize" class="form-label"
                 >What is your Shoe Size?</label
               >
-              <select class="form-select bg-dark text-white" id="shoeSize">
+              <select
+                class="form-select bg-dark text-white"
+                id="shoeSize"
+                name="shoeSize">
                 <option selected disabled>Select One</option>
                 <option value="4">4</option>
                 <option value="5">5</option>
@@ -1220,7 +1234,7 @@
                   <input
                     class="form-check-input bg-dark"
                     type="radio"
-                    name="radios"
+                    name="Music knowledge skills:"
                     id="radio1"
                     value="novice"
                     checked />
@@ -1258,10 +1272,11 @@
                   <input
                     class="form-check-input bg-dark"
                     type="checkbox"
-                    value=""
-                    id="checkAirplaneGladiator" />
+                    value="Yes"
+                    id="checkAirplaneGladiator"
+                    name="Like Gladiator Movies:" />
                   <label class="form-check-label" for="checkAirplaneGladiator">
-                    I like Gladiator Movies
+                    Like Gladiator Movies
                   </label>
                 </div>
 
@@ -1269,12 +1284,13 @@
                   <input
                     class="form-check-input bg-dark"
                     type="checkbox"
-                    value=""
-                    id="checkAirplaneTurkPrision" />
+                    value="Yes"
+                    id="checkAirplaneTurkPrision"
+                    name="Have been in a Turkish Prision:" />
                   <label
                     class="form-check-label"
                     for="checkAirplaneTurkPrision">
-                    I have been in a Turkish Prision
+                    Have been in a Turkish Prision
                   </label>
                 </div>
 
@@ -1282,10 +1298,11 @@
                   <input
                     class="form-check-input bg-dark"
                     type="checkbox"
-                    value=""
-                    id="checkAirplaneGymnasium" />
+                    value="Yes"
+                    id="checkAirplaneGymnasium"
+                    name="Like to hang around Gymnasiums:" />
                   <label class="form-check-label" for="checkAirplaneGymnasium">
-                    I like to hang around Gymnasiums
+                    Like to hang around Gymnasiums
                   </label>
                 </div>
 
@@ -1293,10 +1310,11 @@
                   <input
                     class="form-check-input bg-dark"
                     type="checkbox"
-                    value=""
-                    id="checkBigLebowskiCalmer" />
+                    value="Yes"
+                    id="checkBigLebowskiCalmer"
+                    name="Calmer than you:" />
                   <label class="form-check-label" for="checkBigLebowskiCalmer">
-                    I am Calmer than you
+                    Calmer than you
                   </label>
                 </div>
 
@@ -1304,8 +1322,9 @@
                   <input
                     class="form-check-input bg-dark"
                     type="checkbox"
-                    value=""
-                    id="checkBigLebowskiAbides" />
+                    value="Yes"
+                    id="checkBigLebowskiAbides"
+                    name="The Dude abides:" />
                   <label class="form-check-label" for="checkBigLebowskiAbides">
                     The Dude abides
                   </label>
@@ -1315,8 +1334,9 @@
                   <input
                     class="form-check-input bg-dark"
                     type="checkbox"
-                    value=""
-                    id="checkBigLebowskiAggression" />
+                    value="Yes"
+                    id="checkBigLebowskiAggression"
+                    name="This aggression will not stand, man:" />
                   <label
                     class="form-check-label"
                     for="checkBigLebowskiAggression">
@@ -1327,8 +1347,9 @@
                   <input
                     class="form-check-input bg-dark"
                     type="checkbox"
-                    value=""
-                    id="checkBacktotheFutureRoads" />
+                    value="Yes"
+                    id="checkBacktotheFutureRoads"
+                    name="Where we’re going, we don’t need roads:" />
                   <label
                     class="form-check-label"
                     for="checkBacktotheFutureRoads">
@@ -1341,8 +1362,9 @@
                   <input
                     class="form-check-input bg-dark"
                     type="checkbox"
-                    value=""
-                    id="checkStarwarsOdds" />
+                    value="Yes"
+                    id="checkStarwarsOdds"
+                    name="Never tell me the odds!:" />
                   <label class="form-check-label" for="checkStarwarsOdds">
                     Never tell me the odds!
                   </label>
@@ -1352,8 +1374,9 @@
                   <input
                     class="form-check-input bg-dark"
                     type="checkbox"
-                    value=""
-                    id="checkPrincessBrideCastle" />
+                    value="Yes"
+                    id="checkPrincessBrideCastle"
+                    name="Have fun storming the castle!:" />
                   <label
                     class="form-check-label"
                     for="checkPrincessBrideCastle">
@@ -1365,8 +1388,9 @@
                   <input
                     class="form-check-input bg-dark"
                     type="checkbox"
-                    value=""
-                    id="checkBigFightClub1Rule" />
+                    value="Yes"
+                    id="checkBigFightClub1Rule"
+                    name="You do not talk about Fight Club:" />
                   <label class="form-check-label" for="checkBigFightClub1Rule">
                     You do not talk about Fight Club
                   </label>
@@ -1376,8 +1400,9 @@
                   <input
                     class="form-check-input bg-dark"
                     type="checkbox"
-                    value=""
-                    id="checkBigLebowskiRug" />
+                    value="Yes"
+                    id="checkBigLebowskiRug"
+                    name="That rug really tied the room together:" />
                   <label class="form-check-label" for="checkBigLebowskiRug">
                     That rug really tied the room together
                   </label>
@@ -1387,8 +1412,9 @@
                   <input
                     class="form-check-input bg-dark"
                     type="checkbox"
-                    value=""
-                    id="checkWhenHarryMetSallyOrdering" />
+                    value="Yes"
+                    id="checkWhenHarryMetSallyOrdering"
+                    name="I’ll have what she’s having:" />
                   <label
                     class="form-check-label"
                     for="checkWhenHarryMetSallyOrdering">
@@ -1400,8 +1426,9 @@
                   <input
                     class="form-check-input bg-dark"
                     type="checkbox"
-                    value=""
-                    id="checkMontyPythonWound" />
+                    value="Yes"
+                    id="checkMontyPythonWound"
+                    name="It’s just a flesh wound:" />
                   <label class="form-check-label" for="checkMontyPythonWound">
                     It’s just a flesh wound
                   </label>
@@ -1412,8 +1439,9 @@
                   <input
                     class="form-check-input bg-dark"
                     type="checkbox"
-                    value=""
-                    id="checkScarfaceFriend" />
+                    value="Yes"
+                    id="checkScarfaceFriend"
+                    name="Say hello to my little friend!:" />
                   <label class="form-check-label" for="checkScarfaceFriend">
                     Say hello to my little friend!
                   </label>
@@ -1423,8 +1451,9 @@
                   <input
                     class="form-check-input bg-dark"
                     type="checkbox"
-                    value=""
-                    id="checkKarateKidWax" />
+                    value="Yes"
+                    id="checkKarateKidWax"
+                    name="Wax on, wax off:" />
                   <label class="form-check-label" for="checkKarateKidWax">
                     Wax on, wax off
                   </label>
@@ -1434,8 +1463,9 @@
                   <input
                     class="form-check-input bg-dark"
                     type="checkbox"
-                    value=""
-                    id="checkTopGunSpeed" />
+                    value="Yes"
+                    id="checkTopGunSpeed"
+                    name="I feel the need, the need for speed:" />
                   <label class="form-check-label" for="checkTopGunSpeed">
                     I feel the need, the need for speed
                   </label>
@@ -1445,8 +1475,9 @@
                   <input
                     class="form-check-input bg-dark"
                     type="checkbox"
-                    value=""
-                    id="checkJawsBoat" />
+                    value="Yes"
+                    id="checkJawsBoat"
+                    name="You’re gonna need a bigger boat:" />
                   <label class="form-check-label" for="checkJawsBoat">
                     You’re gonna need a bigger boat
                   </label>
@@ -1456,8 +1487,9 @@
                   <input
                     class="form-check-input bg-dark"
                     type="checkbox"
-                    value=""
-                    id="checkBigDirtyDancingBaby" />
+                    value="Yes"
+                    id="checkBigDirtyDancingBaby"
+                    name="Nobody puts Baby in a corner:" />
                   <label
                     class="form-check-label"
                     for="checkBigDirtyDancingBaby">
@@ -1469,8 +1501,9 @@
                   <input
                     class="form-check-input bg-dark"
                     type="checkbox"
-                    value=""
-                    id="checkAirplaneShirley" />
+                    value="Yes"
+                    id="checkAirplaneShirley"
+                    name="Don’t call me Shirley:" />
                   <label class="form-check-label" for="checkAirplaneShirley">
                     Don’t call me Shirley
                   </label>
