@@ -6,10 +6,6 @@
   --card-border-hover-color: #747171;
   --card-border-hover-shadow-color: rgba(0, 0, 0, 0.8);
   --example-img-border-shadow-color: rgba(0, 0, 0, 0.8);
-
-  --bs-nav-link-color: #160a05;
-  --bs-nav-link-hover-color: #160a05;
-  --bs-nav-link-disabled-color: #6c757d;
 }
 
 .resume-image {
@@ -17,16 +13,6 @@
   height: 100%;
   border: 0.5rem solid rgb(249, 3, 3);
   padding: 1rem;
-}
-
-.resume-image:hover {
-  /* opacity: 1;
-  transform: scale(1.05); */
-}
-
-.resume-image-nav-profilepic img {
-  width: 100%;
-  height: 100%;
 }
 
 .resume-image-profile-about {
@@ -44,7 +30,7 @@
 .resume-image-nav-profilepic:hover,
 .social-icon:hover {
   opacity: 1;
-  transform: scale(1.05);
+  transform: scale(1.25);
 }
 
 .social-icon:hover {
